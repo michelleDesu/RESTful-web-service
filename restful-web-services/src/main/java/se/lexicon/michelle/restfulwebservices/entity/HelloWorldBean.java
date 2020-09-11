@@ -39,4 +39,5 @@ public class HelloWorldBean {
         return "helloWorldBean{" + "message='" + message + '\'' +
                 '}';
     }
+
 }
