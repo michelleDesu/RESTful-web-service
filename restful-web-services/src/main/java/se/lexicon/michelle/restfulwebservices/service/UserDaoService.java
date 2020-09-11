@@ -1,6 +1,5 @@
-package se.lexicon.michelle.restfulwebservices.dao;
+package se.lexicon.michelle.restfulwebservices.service;
 
-import org.graalvm.compiler.lir.LIRInstruction;
 import org.springframework.stereotype.Component;
 import se.lexicon.michelle.restfulwebservices.entity.User;
 
