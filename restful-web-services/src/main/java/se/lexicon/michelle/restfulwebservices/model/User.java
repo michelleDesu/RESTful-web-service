@@ -1,6 +1,6 @@
-package se.lexicon.michelle.restfulwebservices.entity;
+package se.lexicon.michelle.restfulwebservices.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class User {
@@ -9,18 +9,18 @@ public class User {
 
     private String name;
 
-    private Date birthDate;
+    private LocalDate birthDate;
 
     public User() {
     }
 
-    public User(Integer id, String name, Date birthDate) {
+    public User(Integer id, String name, LocalDate birthDate) {
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;
     }
 
-    public User(String name, Date birthDate) {
+    public User(String name, LocalDate birthDate) {
         this.name = name;
         this.birthDate = birthDate;
     }
@@ -41,11 +41,11 @@ public class User {
         this.name = name;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 

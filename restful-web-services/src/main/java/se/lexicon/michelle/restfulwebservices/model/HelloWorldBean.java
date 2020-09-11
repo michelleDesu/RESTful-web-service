@@ -1,4 +1,4 @@
-package se.lexicon.michelle.restfulwebservices.entity;
+package se.lexicon.michelle.restfulwebservices.model;
 
 import java.util.Objects;
 

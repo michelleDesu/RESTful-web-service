@@ -1,10 +1,10 @@
-package se.lexicon.michelle.restfulwebservices.service;
+package se.lexicon.michelle.restfulwebservices.dao;
 
 import org.springframework.stereotype.Component;
-import se.lexicon.michelle.restfulwebservices.entity.User;
+import se.lexicon.michelle.restfulwebservices.model.User;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Component
@@ -14,9 +14,9 @@ public class UserDaoService {
     private static int usersCount = 3;
 
     static {
-        users.add(new User(1,"Saga", new Date()));
-        users.add(new User(2,"Erak", new Date()));
-        users.add(new User(3,"Styv", new Date()));
+        users.add(new User(1,"Saga", LocalDate.now()));
+        users.add(new User(2,"Erak", LocalDate.now()));
+        users.add(new User(3,"Styv", LocalDate.now()));
     }
 
     public List<User> findALL(){
@@ -41,6 +41,5 @@ public class UserDaoService {
         }
         return foundUser;
     }
-
 
 }
